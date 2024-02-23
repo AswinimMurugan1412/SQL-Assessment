@@ -1,0 +1,52 @@
+--CREATE TABLE Students (
+--Stud_id INT PRIMARY KEY,
+--Stud_Name VARCHAR(100),
+--Qualification VARCHAR(50),
+--email VARCHAR(255),
+--contact VARCHAR(15),
+--course_id INT ,
+--Date_of_Joining DATE
+    
+--);
+--INSERT INTO Students (Stud_id, Stud_Name, Qualification, email, contact, course_id, Date_of_Joining)
+--VALUES
+--(1,'Fathima','MCA','fathima@gmail.com',9876543210,1,'2024-02-12'),
+--(2,'Raveena','Bsc','raveena@gmail.com',8776543219,2,'2024-02-02'),
+--(3,'Vinoth','Msc','vinoth@gmail.com',8776543210,1,'2024-01-17'),
+--(4,'Tarun','BCom','tarun@gmail.com',6778976543,3,'2023-09-24'),
+--(5,'Rajesh','BCom','rajesh@gmail.com',8779023456,3,'2023-08-17'),
+--(6,'Kalyani','BCom','kalyani@gmail.com',7889012345,3,'2023-10-23'),
+--(7,'Hemanth','Msc','hemanth@gmail.com',8776543210,1,'2023-11-27');
+
+--select * from Students;
+
+--CREATE TABLE course (
+    --course_id INT PRIMARY KEY,
+    --course_name VARCHAR(255),
+    --fees DECIMAL(10, 2),
+    --duration VARCHAR(50)
+--);
+
+--INSERT INTO course (course_id, course_name, fees, duration) VALUES
+--(1, 'FSD', 80000, '6 months'),
+--(2, 'PGA', 125000, '9 months'),
+--(3, 'Cibop', 90000, '6 months'),
+--(4, 'Digital marketing',85000, '4 months');
+
+--select * from Course;
+
+--select MAX(fees) as max_fees FROM course;
+
+--select SUM(fees) as total_fees FROM course;
+
+--select course_id, course_name, fees, duration FROM course WHERE course_name = 'FSD';
+
+--select course_id, course_name, fees, duration FROM course WHERE course_name IN ('FSD', 'PGA');
+
+--select s.*, c.course_id, c.course_name FROM student s JOIN course c ON s.course_id = c.course_id;
+
+--select * FROM students ORDER BY Stud_id LIMIT 4 OFFSET 3;
+
+--select * FROM students WHERE date_of_joining BETWEEN '2023-10-11' AND '2024-02-23';
+
+--select * FROM students WHERE Stud_Name LIKE 'R%';
